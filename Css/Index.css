@@ -131,3 +131,81 @@ nav ul .links li .Login:hover{
   height: 100%;
   object-fit: cover;
 }
+
+.carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1 0 300px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card h2 {
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Draggable Carousel */
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
+}
+
+.slick-slider {
+  touch-action: pan-y;
+}
+
+.slick-list {
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide .carousel-container { max-width: 100%; margin: 0 auto; } 
